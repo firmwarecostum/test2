@@ -552,6 +552,12 @@ option(
                  'auto = allowed everywhere except on Android'
 )
 
+option('scanner_bin',
+  description: 'Path to wayland-scanner binary',
+  type: 'string',
+  value: ''
+)
+
 option(
   'zstd',
   type : 'feature',
