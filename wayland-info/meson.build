@@ -1,5 +1,9 @@
 dep_scanner = dependency('wayland-scanner', native: true)
-prog_scanner = find_program(dep_scanner.get_pkgconfig_variable('wayland_scanner'))
+if (get_option('scanner_bin') == '')
+	prog_scanner = find_program(dep_scanner.get_pkgconfig_variable('wayland_scanner'))
+else
+	prog_scanner = find_program(get_option('scanner_bin'))
+endif
 
 dep_wp = dependency('wayland-protocols', version: '>= 1.24')
 dir_wp_base = dep_wp.get_pkgconfig_variable('pkgdatadir')
