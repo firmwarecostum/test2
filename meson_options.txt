@@ -10,6 +10,10 @@ option('tests',
   description: 'Compile Wayland tests',
   type: 'boolean',
   value: true)
+option('scanner_bin',
+  description: 'Path to wayland-scanner binary',
+  type: 'string',
+  value: '')
 option('documentation',
   description: 'Build the documentation (requires Doxygen, dot, xmlto, xsltproc)',
   type: 'boolean',
