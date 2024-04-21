@@ -234,3 +234,9 @@ option(
 	value: false,
 	description: 'Generate documentation'
 )
+option(
+	'scanner_bin',
+	description: 'Path to wayland-scanner binary',
+	type: 'string',
+	value: ''
+)
