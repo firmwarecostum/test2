@@ -540,7 +540,11 @@ if build_tools
 You can disable the Wayland xkbcli programs with -Denable-wayland=false.''')
         endif
 
-        wayland_scanner = find_program(wayland_scanner_dep.get_variable(pkgconfig: 'wayland_scanner'))
+        if (get_option('scanner_bin') == '')
+            wayland_scanner = find_program(wayland_scanner_dep.get_variable(pkgconfig: 'wayland_scanner'))
+        else
+            wayland_scanner = find_program(get_option('scanner_bin'))
+        endif
         wayland_scanner_code_gen = generator(
             wayland_scanner,
             output: '@BASENAME@-protocol.c',
