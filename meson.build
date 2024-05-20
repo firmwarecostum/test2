@@ -112,14 +112,14 @@ if WITH_X11 and get_option('with_glx') != 'no'
 endif
 
 WITH_WAYLAND = false
-if get_option('with_wayland') != 'no'
+if get_option('scanner_bin') != ''
   wayland_dep = dependency('wayland-client', version : '>= 1.11.0',
 			   required : get_option('with_wayland') == 'yes')
   wayland_scanner_dep = dependency('wayland-scanner', version : '>= 1.15',
                                    required : get_option('with_wayland') == 'yes',
                                    native : true)
   if wayland_scanner_dep.found()
-    wl_scanner = find_program(wayland_scanner_dep.get_variable(pkgconfig: 'wayland_scanner'))
+    wl_scanner = find_program(get_option('scanner_bin'))
   endif
   WITH_WAYLAND = wayland_dep.found() and wayland_scanner_dep.found()
 endif
