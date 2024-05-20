@@ -119,6 +119,9 @@ if get_option('with_wayland') != 'no'
                                    required : get_option('with_wayland') == 'yes',
                                    native : true)
   if wayland_scanner_dep.found()
+    if (get_option('scanner_bin') == '')
+    wl_scanner = find_program(get_option('scanner_bin'))
+    else
     wl_scanner = find_program(wayland_scanner_dep.get_variable(pkgconfig: 'wayland_scanner'))
   endif
   WITH_WAYLAND = wayland_dep.found() and wayland_scanner_dep.found()
