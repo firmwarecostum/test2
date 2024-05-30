@@ -44,7 +44,6 @@ sources = [
 	'v4l2.c',
 	'mpeg2.c',
 	'h264.c',
-	'h265.c'
 ]
 
 headers = [
