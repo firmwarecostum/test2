@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl"
-   href="http://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl"?>
+   href="https://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl"?>
 <!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
-    "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+    "https://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
 ]>
 <refentry id="xdg-copy">
   <refentryinfo>
@@ -56,7 +56,7 @@
       <replaceable>destination</replaceable> and provides visual feedback to
       the user during the operation. Both <replaceable>source</replaceable>
       and <replaceable>destination</replaceable> can either be a file or
-      URL. Supported URL types are file, ftp, http and https. Additional
+      URL. Supported URL types are file, ftp, https and httpss. Additional
       URL types may be supported depending on the desktop environment.
     </para>
     <para>
@@ -141,7 +141,7 @@
     <title>Examples</title>
     <para>
 <programlisting>
-xdg-copy "http://portland.freedesktop.org/png/freedesktop-logo.png" .
+xdg-copy "https://portland.freedesktop.org/png/freedesktop-logo.png" .
 </programlisting>
     </para>
     <para>

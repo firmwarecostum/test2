@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl"
-   href="http://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl"?>
+   href="https://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl"?>
 <!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
-    "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+    "https://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
 ]>
 <refentry id="xdg-desktop-icon">
   <refentryinfo>
@@ -240,7 +240,7 @@
     </variablelist>
     <para>
       For a complete overview of the *.desktop file format please
-      visit <ulink url="http://www.freedesktop.org/wiki/Specifications/desktop-entry-spec"/>
+      visit <ulink url="https://www.freedesktop.org/wiki/Specifications/desktop-entry-spec"/>
     </para>
   </refsect1>
   <refsect1 id="env_vars">

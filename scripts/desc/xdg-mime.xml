@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl"
-   href="http://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl"?>
+   href="https://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl"?>
 <!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
-    "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd" [
+    "https://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd" [
 ]>
 <refentry id="xdg-mime">
   <refentryinfo>
@@ -349,8 +349,8 @@ and adding descriptions for new file types</refpurpose>
       <citerefentry><refentrytitle>xdg-desktop-menu</refentrytitle>
         <manvolnum>1</manvolnum>
       </citerefentry>,
-      <ulink url="http://www.freedesktop.org/wiki/Specifications/shared-mime-info-spec/">Shared MIME database specification</ulink>,
-      <ulink url="http://www.freedesktop.org/wiki/Specifications/mime-apps-spec/">MIME applications associations specification</ulink>
+      <ulink url="https://www.freedesktop.org/wiki/Specifications/shared-mime-info-spec/">Shared MIME database specification</ulink>,
+      <ulink url="https://www.freedesktop.org/wiki/Specifications/mime-apps-spec/">MIME applications associations specification</ulink>
     </para>
   </refsect1>
   <refsect1 id="examples">
@@ -377,7 +377,7 @@ xdg-mime install shinythings-shiny.xml
 shinythings-shiny.xml:
 
 &lt;?xml version="1.0"?&gt;
-&lt;mime-info xmlns='http://www.freedesktop.org/standards/shared-mime-info'&gt;
+&lt;mime-info xmlns='https://www.freedesktop.org/standards/shared-mime-info'&gt;
   &lt;mime-type type="text/x-shiny"&gt;
     &lt;comment&gt;Shiny new file type&lt;/comment&gt;
     &lt;glob pattern="*.shiny"/&gt;

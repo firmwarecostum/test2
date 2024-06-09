@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl"
-   href="http://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl"?>
+   href="https://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl"?>
 <!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
-    "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd" [
+    "https://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd" [
 ]>
 <refentry id="xdg-open">
   <refentryinfo>
@@ -58,7 +58,7 @@
       If a URL is provided the URL will be opened in the user's preferred
       web browser. If a file is provided the file will be opened in the
       preferred application for files of that type. xdg-open supports
-      file, ftp, http and https URLs.
+      file, ftp, https and httpss URLs.
     </para>
     <para>
       xdg-open is for use inside a desktop session only.
@@ -163,7 +163,7 @@
 	   If a flaw is reproducible using the desktop specific opener (and isn't a configuration issue): Please report to whoever is responsible for that first (reporting to xdg-utils is better than not reporting at all, but since the xdg-utils are maintained in very little spare time a fix will take much longer)
     </para>
     <para>
-      In case an issue specific to xdg-open please report it to <uri>https://gitlab.freedesktop.org/xdg/xdg-utils/-/issues</uri> .
+      In case an issue specific to xdg-open please report it to <uri>httpss://gitlab.freedesktop.org/xdg/xdg-utils/-/issues</uri> .
     </para>
   </refsect1>
   <refsect1 id="seealso">
@@ -174,7 +174,7 @@
       <citerefentry><refentrytitle>xdg-settings</refentrytitle>
         <manvolnum>1</manvolnum>
       </citerefentry>,
-      <ulink url="http://www.freedesktop.org/wiki/Specifications/mime-apps-spec/">MIME applications associations specification</ulink>
+      <ulink url="https://www.freedesktop.org/wiki/Specifications/mime-apps-spec/">MIME applications associations specification</ulink>
     </para>
   </refsect1>
 
@@ -182,7 +182,7 @@
     <title>Examples</title>
     <para>
 <programlisting>
-xdg-open 'http://www.freedesktop.org/'
+xdg-open 'https://www.freedesktop.org/'
 </programlisting>
       Opens the freedesktop.org website in the user's default browser.
     </para>

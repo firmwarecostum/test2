@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl"
-   href="http://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl"?>
+   href="https://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl"?>
 <!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
-    "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+    "https://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
 ]>
 <refentry id="xdg-icon-resource">
   <refentryinfo>
@@ -89,7 +89,7 @@
     <para>
       The desktop icon system works according to the
       XDG Icon Theme Specification at
-      <ulink url="http://www.freedesktop.org/wiki/Specifications/icon-theme-spec"/>
+      <ulink url="https://www.freedesktop.org/wiki/Specifications/icon-theme-spec"/>
     </para>
   </refsect1>
   <refsect1 id="commands">
@@ -349,7 +349,7 @@
       <citerefentry><refentrytitle>xdg-mime</refentrytitle>
         <manvolnum>1</manvolnum>
       </citerefentry>,
-      <ulink url="http://www.freedesktop.org/wiki/Specifications/icon-theme-spec/">Icon theme specification</ulink>
+      <ulink url="https://www.freedesktop.org/wiki/Specifications/icon-theme-spec/">Icon theme specification</ulink>
     </para>
   </refsect1>
   <refsect1 id="examples">
