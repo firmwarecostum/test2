@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl"
    href="http://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl"?>
 <!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
-    "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd" [
+    "file:///$(PKG_BUILD_DIR)/scripts/desc/docbook-xml-4.3/docbookx.dtd" [
 ]>
 <refentry id="xdg-mime">
   <refentryinfo>
