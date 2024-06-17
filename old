@@ -1,0 +1,27 @@
+clobber:	_realcleaner _mopup _clobber
+
+distclean:	clobber
+
+# Like distclean but also removes emacs backups and *.orig.
+veryclean:	_verycleaner _mopup _clobber
+	-@rm -f Obsolete Wanted
+
+# Do not 'make _mopup' directly.
+_mopup:
+	rm -f *$(OBJ_EXT) *$(LIB_EXT) all perlmain.c $(mini_only_src) generate_uudmap$(EXE_EXT) $(generated_headers)
+	-rmdir .depending
+	-rm *.depends makedepend_file
+	-@test -f extra.pods && rm -f `cat extra.pods`
+	-@test -f vms/README_vms.pod && rm -f vms/README_vms.pod
+	-rm -f perl.exp ext.libs $(generated_pods) uni.data $(mini_only_objs) pod/roffitall
+	-rm -f perl.export perl.dll perl.libexp perl.map perl.def
+	-rm -f *perl.xok
+	-rm -f cygwin.c libperl*.def libperl*.dll cygperl*.dll *.exe.stackdump
+	-rm -f $(PERL_EXE) $(MINIPERL_EXE) $(LIBPERL) libperl.* microperl
+	-rm -f config.arch config.over $(DTRACE_H)
+
+_cleaner1:
+	-cd os2; rm -f Makefile
+	-cd pod; $(LDLIBPTH) $(MAKE) $(CLEAN)
+	-cd utils; $(LDLIBPTH) $(MAKE) $(CLEAN)
+	-@if test -f $(MINIPERL_EXE) ; then \
